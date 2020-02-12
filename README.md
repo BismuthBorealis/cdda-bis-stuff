@@ -12,7 +12,7 @@ Ver 0.1 "Foxes do it better":
   - added "fox plush" item (based on the teddy bear)
   - added "Fox Mage" profession
 
-Ver 0.1.0.1:
+Ver 0.1.1:
   - added a magical fox plush, which can be used as a spell focus
   - wip stuff, including fox book stuff and magic fox plush stuff
   - udpated the modinfo.json
