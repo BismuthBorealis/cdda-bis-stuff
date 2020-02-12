@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "BismStuff",
+    "name": "Bismuthine Stuff",
+    "authors": [ "BismuthBorealis" ],
+    "description": "Bismuth's first foray into modding, with no real aim except Magic. ",
+    "category": "content",
+    "dependencies": [ "dda", "magiclysm" ]
+  }
+]

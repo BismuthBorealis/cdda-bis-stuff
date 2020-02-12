@@ -1,0 +1,40 @@
+[
+  {
+    "id": "fox_book",
+    "type": "GENERIC",
+    "name": { "str": "Foxes do it Better", "str_pl": "copies of Foxes do it Better" },
+    "description": "A short, sometime humourous, treatice on why foxes are objectively the best. the author seems to get \"Objective\" and \"Subjective\" mixed up a lot.",
+    "weight": "435 g",
+    "volume": "500 ml",
+    "symbol": "?",
+    "color": "red",
+    "use_action": { "type": "learn_spell", "spells": [ "foxs_cunning", "invisibility", "summon_wisps" ] }
+  },
+  {
+    "type": "profession",
+    "ident": "fox_mage",
+    "name": "Fox Mage",
+    "description": "You love foxes, they're objectively the best animal. You even wrote and published a book about them!",
+    "spells": [ { "id": "foxs_cunning", "level": 1 }, { "id": "summon_wisps", "level": 1 } ],
+    "points": 2,
+    "skills": [ { "level": 1, "name": "spellcraft" } ],
+    "items": {
+      "both": [ "jeans", "tshirt", "gloves_light", "boots", "socks", "hoodie", "fox_plush" ],
+      "male": [ "boxer_briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "fox_plush",
+    "symbol": "o",
+    "color": "red",
+    "name": "fox plushy",
+    "description": "A mass produced plush fox.",
+    "price": 200,
+    "material": [ "cotton" ],
+    "weight": "400 g",
+    "volume": "750 ml",
+    "flags": [ "SLEEP_AID" ]
+  }
+]
