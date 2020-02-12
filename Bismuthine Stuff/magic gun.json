@@ -1,0 +1,52 @@
+[
+  {
+    "id": "spell_gun",
+    "copy-from": "pistol_flintlock",
+    "looks-like": "pistol_flintlock",
+    "type": "GUN",
+    "name": "Spellshooter",
+    "tags": [ "WATER_FRIENDLY", "NEVER_JAMS" ],
+    "description": "An alternative to wands. Probably not as good, but this america, and people love their guns.",
+    "price": 45000,
+    "ammo": "spell_bullet"
+  },
+  {
+    "type": "AMMO",
+    "id": "empty_spell_bullet",
+    "looks-like": "crystallized_mana",
+    "price": 1500,
+    "name": "empty spell bullet",
+    "symbol": "=",
+    "color": "yellow",
+    "description": "A spell bullet made from crystallised mana. It isn't imbued with any magic.",
+    "flags": "TRADER_AVOID",
+    "weight": "2 g",
+    "volume": "100 ml",
+    "ammo_type": "spell_bullet",
+    "range": 6,
+    "damage": 10,
+    "dispersion": 45,
+    "recoil": 500,
+    "loudness": 15
+  },
+  {
+    "type": "ammunition_type",
+    "id": "spell_bullet",
+    "name": "Spell Bullet",
+    "default": "empty_spell_bullet"
+  },
+  {
+    "type": "AMMO",
+    "id": "veggrasp_spell_bullet",
+    "copy-from": "empty_spell_bullet",
+    "price": 1650,
+    "name": "vegetative grasp spell bullet",
+    "color": "green",
+    "description": "A spell bullet made from crystallised mana. It is imbued with a \"Vegetative Grasp\" spell."
+  },
+  {
+    "id": "VEGGRASP",
+    "type": "ammo_effect",
+    "use_action": { "type": "cast_spell", "spell_id": "druid_veggrasp", "no_fail": true, "level": 5 }
+  }
+]
