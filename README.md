@@ -1,4 +1,4 @@
-# cdda-bis-stuff
+# cdda mod: Bismuthine Stuff
 
 This repo is for my small, beginner mod for cdda.
 It's going to be an addon for Magiclysm, at the moment.
