@@ -8,11 +8,8 @@
     "volume": "500 ml",
     "symbol": "?",
     "color": "red",
-    "use_action": { "type": "learn_spell", "spells": [ "foxs_cunning", "invisibility", "summon_wisps" ] },
-    "book_data" : {
-      "intelligence" : 18,
-      "use_action" : { "type": "cast_spell", "spell_id": "summon_wisps", "no_fail": true, "level": 25 }
-    }
+    "use_action": { "type": "learn_spell", "spells": [ "foxs_cunning", "obfuscated_body", "summon_wisps" ] },
+    "book_data" : { "intelligence" : 10 }
   },
   {
     "type": "profession",
@@ -73,22 +70,32 @@
     ]
   },
   {
+    "type": "effect_type",
+    "id": "lullaby",
+    "name": [ "Lullaby" ],
+    "apply_message": "You feel calm and sleepy, an ethereal tune ringing in your ears.",
+    "base_mods": {
+      "sleep_chance": [ 10 ],
+      "sleep_min": [ 15000 ],
+      "sleep_max": [ 35000 ]
+    }
+  },
+  {
     "id": "self_sleep",
     "type": "SPELL",
     "name": "Lullaby",
     "description": "A spell to help sleep",
     "valid_targets": [ "self" ],
     "spell_class": "NONE",
-    "effect": "target_attack",
-    "effect-str": "sleep",
-    "min_duration": 50000,
-    "max_duration": 50000,
-    "difficulty": 11,
+    "min_duration": 500,
+    "max_duration": 500,
     "max_level": 1,
-    "base_casting_time": 100,
-    "base_energy_cost": 100,
     "energy_source": "MANA",
-    "min_damage": 0,
-    "max_damage": 0
+    "base_energy_cost": 100,
+    "base_casting_time": 100,
+    "difficulty": 6,
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS", "CONCENTRATE" ],
+    "effect": "target_attack",
+    "effect_str": "lullaby"
   }
 ]
